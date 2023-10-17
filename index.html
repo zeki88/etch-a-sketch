@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1>Zeki's Etch-a-Sketch</h1>
+    <div id="container" draggable="false">
+      <div id="controlPanel">
+        <div id="colorPanel">
+          <button id="colorBtn">Pick a color</button>
+          <input type="color" id="colorPicker" value="#e66465" />
+        </div>
+        <button id="rainbowBtn">Rainbow Mode</button>
+        <button id="eraserBtn">Eraser</button>
+        <button id="clearBtn">Clear</button>
+        <div id="controlSize">
+          <input type="radio" id="16" name="size" value="16" checked>
+          <label for="16">16</label>
+          <input type="radio" id="32" name="size" value="32">
+          <label for="32">32</label>
+          <input type="radio" id="64" name="size" value="64">
+          <label for="64">64</label>
+        </div>
+      </div>
+      <div ondragstart="return false;" ondrop="return false;" draggable="false" id="drawer">
+      </div>
+    </div>
+    
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
